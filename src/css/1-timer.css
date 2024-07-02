@@ -1,0 +1,90 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+}
+
+.label {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.value,
+.label {
+  font-weight: 400;
+  margin: 0 auto;
+  color: #2e2f42;
+}
+
+.clockface {
+  border-radius: 4px;
+  width: 256px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  border: 1px solid #808080;
+  padding: 8px 0 8px 16px;
+  outline: transparent;
+  margin-bottom: 32px;
+}
+
+.clockface:hover {
+  border: 1px solid #000;
+}
+
+.clockface:focus {
+  border: 1px solid #4e75ff;
+}
+
+.clockface:disabled {
+  color: #808080;
+  border: 1px solid #808080;
+}
+
+.js-btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  margin-left: 4px;
+  background-color: #4e75ff;
+  color: #fff;
+  transition: background-color 250ms linear;
+}
+
+.js-btn:hover {
+  background-color: #6c8cff;
+}
+
+.js-btn:disabled {
+  color: #989898;
+  background-color: #cfcfcf;
+}
+
+.form {
+  padding-top: 36px;
+  padding-left: 156px;
+  display: flex;
+  flex-direction: column;
+}
