@@ -7,16 +7,18 @@ const form = document.querySelector('form');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
-  const delay = e.target.delay.value;
+  const delay = parseInt(e.target.delay.value);
   const state = e.target.state.value;
 
-  const promise = new Promise((res, rej) => {
-    if (state === 'fulfilled') {
-      res(delay);
-    } else {
-      rej(delay);
-    }
-  }, delay);
+  const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (state === 'fulfilled') {
+        resolve(delay);
+      } else {
+        reject(delay);
+      }
+    }, delay);
+  });
 
   promise
     .then(delay => {
